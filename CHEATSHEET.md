@@ -94,6 +94,8 @@ Built from mistakes I actually made. Newest additions at the bottom of each sect
 - No `std::set` / `map` / `multiset`. `sortedcontainers` is third-party and **not available on my OA platform**.
 - Standard-library workaround: a sorted list + `bisect_left` (lower_bound) / `bisect.insort`. O(n) insert, fast up to ~1e5.
 - Only need min/max with deletions → `heapq` + lazy deletion.
+- Multiset → count map `defaultdict(int)`; erase one copy with `cnt[x] -= 1` and `del` at 0. Sorted output: `sorted(cnt)` once, print each x `cnt[x]` times.
+- Clearing: clear **every** container you keep in sync (`st.clear()` *and* `mp.clear()`).
 - Heavy ordered-set work on an OA → C++.
 
 ## itertools
