@@ -29,6 +29,7 @@ Syntax notes: [CHEATSHEET.md](CHEATSHEET.md)
 | 1 | Queue using two stacks | [queue_two_stacks.py](01-python-stl/queue_two_stacks.py) | Pour only when out-stack empty, amortized O(1) |
 | 1 | Map add / erase / print | [map_operations.py](01-python-stl/map_operations.py) | dict, `in`, `del`, `elif` |
 | 1 | Every x appears exactly x times | [exactly_x_times.py](01-python-stl/exactly_x_times.py) | `defaultdict(int)` frequency count |
+| 1 | Registration (AZ101) | [registration.py](01-python-stl/registration.py) | Count per name, print before incrementing |
 
 ## Language decisions
 

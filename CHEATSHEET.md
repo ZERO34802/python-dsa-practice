@@ -22,6 +22,7 @@ Built from mistakes I actually made. Newest additions at the bottom of each sect
 | C++ | Python |
 |---|---|
 | `while (t--)` | `for _ in range(t):` (or `t -= 1`; there is no `--`) |
+| `x++` / `mp[s]++` | `x += 1` / `mp[s] += 1` (no `++` either) |
 | `for (int x : arr)` | `for x in arr:` |
 | `else if` | `elif` |
 | `c ? a : b` | `a if c else b` |
