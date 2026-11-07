@@ -33,6 +33,7 @@ Syntax notes: [CHEATSHEET.md](CHEATSHEET.md)
 | 1 | Common Absolute Difference | [common_absolute_difference.py](01-python-stl/common_absolute_difference.py) | Count earlier A[j] ± K with defaultdict |
 | 1 | Priority Queue | [priority_queue.py](01-python-stl/priority_queue.py) | heapq + negation for max-heap |
 | 1 | The Magical Candy Bag (AZ101) | [magical_candy_bag.py](01-python-stl/magical_candy_bag.py) | Greedy max-heap, halve before negating |
+| 1 | Reduce the Array (AZ101) | [reduce_the_array.py](01-python-stl/reduce_the_array.py) | Min-heap optimal merge (Huffman) |
 
 ## Language decisions
 
