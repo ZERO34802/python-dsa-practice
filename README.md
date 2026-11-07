@@ -38,6 +38,7 @@ Syntax notes: [CHEATSHEET.md](CHEATSHEET.md)
 | 1 | Set (AZ101) | [set_operations.py](01-python-stl/set_operations.py) | Built-in set, `sorted()` at print time |
 | 1 | Students and Grades | [students_and_grades.py](01-python-stl/students_and_grades.py) | Hash set; check then add each arrival |
 | 1 | Multiset (AZ101) | [multiset.py](01-python-stl/multiset.py) | Count map as multiset, sort at print |
+| 1 | Towers (AZ101) | [towers.py](01-python-stl/towers.py) | Sorted list + `bisect_right`, replace in place |
 
 ## Language decisions
 
