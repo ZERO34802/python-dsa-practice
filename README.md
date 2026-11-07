@@ -32,6 +32,7 @@ Syntax notes: [CHEATSHEET.md](CHEATSHEET.md)
 | 1 | Registration (AZ101) | [registration.py](01-python-stl/registration.py) | Count per name, print before incrementing |
 | 1 | Common Absolute Difference | [common_absolute_difference.py](01-python-stl/common_absolute_difference.py) | Count earlier A[j] ± K with defaultdict |
 | 1 | Priority Queue | [priority_queue.py](01-python-stl/priority_queue.py) | heapq + negation for max-heap |
+| 1 | The Magical Candy Bag (AZ101) | [magical_candy_bag.py](01-python-stl/magical_candy_bag.py) | Greedy max-heap, halve before negating |
 
 ## Language decisions
 

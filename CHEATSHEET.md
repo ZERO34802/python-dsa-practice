@@ -59,6 +59,8 @@ Built from mistakes I actually made. Newest additions at the bottom of each sect
 - Pairs: `heappush(pq, (-score, name))` negates only the sort key.
 - `pq[0]` / `heappop` on an empty heap crash. Guard with `if pq:`.
 - Skip `queue.PriorityQueue` (thread-safe, slower).
+- `heapq.heapify(lst)` builds a heap in O(n), in place.
+- Do arithmetic on the **positive** value, then negate: `-7 // 2 == -4` (Python floors toward -inf; C++ truncates to -3).
 
 ## dict / defaultdict / set
 
