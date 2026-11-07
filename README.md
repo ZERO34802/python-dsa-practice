@@ -36,6 +36,7 @@ Syntax notes: [CHEATSHEET.md](CHEATSHEET.md)
 | 1 | Reduce the Array (AZ101) | [reduce_the_array.py](01-python-stl/reduce_the_array.py) | Min-heap optimal merge (Huffman) |
 | 1 | Multimap (AZ101) | [multimap.py](01-python-stl/multimap.py) | `defaultdict(deque)`, guard empty entries |
 | 1 | Set (AZ101) | [set_operations.py](01-python-stl/set_operations.py) | Built-in set, `sorted()` at print time |
+| 1 | Students and Grades | [students_and_grades.py](01-python-stl/students_and_grades.py) | Hash set; check then add each arrival |
 
 ## Language decisions
 

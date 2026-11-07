@@ -72,6 +72,7 @@ Built from mistakes I actually made. Newest additions at the bottom of each sect
 | `for (auto& [k, v] : mp)` | `for k, v in mp.items():` |
 | `map` where `mp[k]++` creates k | `defaultdict(int)` |
 | `unordered_set` | `set()` (`{}` is an empty **dict**) |
+| `unordered_set<ll> s(v.begin(), v.end())` | `s = set(arr)` |
 | `s.erase(x)` | `s.discard(x)` (safe) / `s.remove(x)` (crashes if missing) |
 
 - Plain dict: `mp[k] += 1` on a missing key → `KeyError`. Use `mp.get(k, 0)` or `defaultdict(int)`.
