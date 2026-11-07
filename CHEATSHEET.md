@@ -45,6 +45,21 @@ Built from mistakes I actually made. Newest additions at the bottom of each sect
 - `s2.append(s1.pop())` moves the top of s1 onto s2.
 - `lst[-1]` / `lst.pop()` on an empty list → `IndexError`.
 
+## Priority queue (heapq)
+
+| C++ `priority_queue<int> pq` (max) | Python `pq = []` + `import heapq` |
+|---|---|
+| `pq.push(x)` | `heapq.heappush(pq, -x)` |
+| `pq.top()` | `-pq[0]` |
+| `pq.pop()` | `heapq.heappop(pq)`, which also **returns** the (negated) value |
+| `pq.empty()` / `size()` | `not pq` / `len(pq)` |
+
+- `heapq` is **min-heap only**. For a max-heap, negate on push and negate again on read.
+- No heap object: the functions take the list, `heappop(pq)`, not `heappop()`.
+- Pairs: `heappush(pq, (-score, name))` negates only the sort key.
+- `pq[0]` / `heappop` on an empty heap crash. Guard with `if pq:`.
+- Skip `queue.PriorityQueue` (thread-safe, slower).
+
 ## dict / defaultdict / set
 
 | C++ | Python |
