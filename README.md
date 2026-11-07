@@ -30,6 +30,7 @@ Syntax notes: [CHEATSHEET.md](CHEATSHEET.md)
 | 1 | Map add / erase / print | [map_operations.py](01-python-stl/map_operations.py) | dict, `in`, `del`, `elif` |
 | 1 | Every x appears exactly x times | [exactly_x_times.py](01-python-stl/exactly_x_times.py) | `defaultdict(int)` frequency count |
 | 1 | Registration (AZ101) | [registration.py](01-python-stl/registration.py) | Count per name, print before incrementing |
+| 1 | Common Absolute Difference | [common_absolute_difference.py](01-python-stl/common_absolute_difference.py) | Count earlier A[j] ± K with defaultdict |
 
 ## Language decisions
 

@@ -29,6 +29,7 @@ Built from mistakes I actually made. Newest additions at the bottom of each sect
 | `{ }` | indentation; check which loop a line belongs to |
 
 - Declare per-test-case containers **inside** the test loop.
+- `return` only works inside a `def`. Top-level code uses `print`.
 
 ## Stack / queue
 
