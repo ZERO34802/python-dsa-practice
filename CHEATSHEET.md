@@ -79,6 +79,11 @@ Built from mistakes I actually made. Newest additions at the bottom of each sect
 - With defaultdict, just **reading** `mp[k]` inserts k. Use `k in mp` to check without inserting.
 - Looping over a dict gives **keys**. Use `.items()` for pairs.
 - `from collections import ...`, lowercase.
+- `map<K, vector<T>>` → `defaultdict(list)`. Need fast front removal → `defaultdict(deque)` + `popleft()`.
+- `deque` is imported from `collections` (`from collections import defaultdict, deque`), not `import deque`.
+- `list.pop(0)` is O(n); `popleft()` exists only on a deque.
+- A key can exist with an **empty** list/deque after removals. `k in mp` isn't enough before `[0]` / `popleft()`: check `if mp[k]:`.
+- `del mp[k]` on a missing key → `KeyError`. Guard with `if k in mp:` or use `mp.pop(k, None)`.
 
 ## Sorted containers (the big gap)
 

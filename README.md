@@ -9,7 +9,7 @@ Syntax notes: [CHEATSHEET.md](CHEATSHEET.md)
 
 | # | Topic | Status |
 |---|---|---|
-| 1 | Python's "STL" (list, tuple, str, dict, defaultdict, Counter, set, deque, heapq, bisect, itertools, math) | In progress |
+| 1 | Python's "STL" (list, tuple, str, dict, defaultdict, Counter, set, deque, heapq, bisect, itertools, math) | Done |
 | 2 | Arrays and hashing | |
 | 3 | Two pointers and sliding window | |
 | 4 | Prefix sums and binary search (incl. on the answer) | |
@@ -34,6 +34,7 @@ Syntax notes: [CHEATSHEET.md](CHEATSHEET.md)
 | 1 | Priority Queue | [priority_queue.py](01-python-stl/priority_queue.py) | heapq + negation for max-heap |
 | 1 | The Magical Candy Bag (AZ101) | [magical_candy_bag.py](01-python-stl/magical_candy_bag.py) | Greedy max-heap, halve before negating |
 | 1 | Reduce the Array (AZ101) | [reduce_the_array.py](01-python-stl/reduce_the_array.py) | Min-heap optimal merge (Huffman) |
+| 1 | Multimap (AZ101) | [multimap.py](01-python-stl/multimap.py) | `defaultdict(deque)`, guard empty entries |
 
 ## Language decisions
 
