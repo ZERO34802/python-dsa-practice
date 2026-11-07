@@ -35,6 +35,7 @@ Syntax notes: [CHEATSHEET.md](CHEATSHEET.md)
 | 1 | The Magical Candy Bag (AZ101) | [magical_candy_bag.py](01-python-stl/magical_candy_bag.py) | Greedy max-heap, halve before negating |
 | 1 | Reduce the Array (AZ101) | [reduce_the_array.py](01-python-stl/reduce_the_array.py) | Min-heap optimal merge (Huffman) |
 | 1 | Multimap (AZ101) | [multimap.py](01-python-stl/multimap.py) | `defaultdict(deque)`, guard empty entries |
+| 1 | Set (AZ101) | [set_operations.py](01-python-stl/set_operations.py) | Built-in set, `sorted()` at print time |
 
 ## Language decisions
 

@@ -78,7 +78,8 @@ Built from mistakes I actually made. Newest additions at the bottom of each sect
 - `defaultdict(int)` passes the **function** `int`, which is called for each missing key (`int()` = 0, `list()` = []).
 - With defaultdict, just **reading** `mp[k]` inserts k. Use `k in mp` to check without inserting.
 - Looping over a dict gives **keys**. Use `.items()` for pairs.
-- `from collections import ...`, lowercase.
+- `from collections import ...`, lowercase. `list`, `dict`, `set` are built in: never import them.
+- `range()` takes a number. To loop over a list (or `sorted(s)`), write `for x in lst:` directly.
 - `map<K, vector<T>>` → `defaultdict(list)`. Need fast front removal → `defaultdict(deque)` + `popleft()`.
 - `deque` is imported from `collections` (`from collections import defaultdict, deque`), not `import deque`.
 - `list.pop(0)` is O(n); `popleft()` exists only on a deque.
