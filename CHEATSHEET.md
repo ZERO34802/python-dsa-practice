@@ -32,6 +32,7 @@ print("\n".join(map(str, out))) # print once, after the loop
 - `print` writes to a buffer. A flush sends it out. A million small flushes is the slow part.
 - `readline` keeps the `\n`: harmless with `.split()`, but use `.strip()` when reading a whole line as a string.
 - `join` needs strings: `map(str, out)` converts each element first. The separator goes before `.join`.
+- Check the output format: one line per test case → `" ".join(...)`; one answer per line → `"\n".join(...)`.
 - `print` has named arguments: `end` (default `"\n"`) and `sep` (default `" "`).
 
 ## Control flow
@@ -61,6 +62,12 @@ print("\n".join(map(str, out))) # print once, after the loop
 - Lists hold **references** (pointers). `a = b` gives two names for one list; it doesn't copy.
 - `x[i] = v` repoints slot i (ints are immutable, so `[0] * m` is safe). The bug only appears when slots share a **mutable** object (a list) and you edit *inside* it.
 - `[0]` on its own **creates** a list; `row[0]` **indexes** into one.
+
+## Tuples (pair)
+
+- `p = (a, b)` is a pair; `p[0]` / `p[1]` = `.first` / `.second`; unpack with `x, y = p`.
+- Compare lexicographically like `pair`. Immutable: `p[0] = 5` is an error.
+- The comma makes the tuple: `(5)` is just 5, `(5,)` is a tuple.
 
 ## Stack / queue
 
@@ -124,7 +131,8 @@ print("\n".join(map(str, out))) # print once, after the loop
 - `sorted(mp)` gives sorted keys. `sorted(mp.items())` gives pairs sorted by key. `sorted(mp.items(), key=lambda kv: kv[1])` sorts by value.
 - No `std::set` / `map` / `multiset`. `sortedcontainers` is third-party and **not available on my OA platform**.
 - Standard-library workaround: a sorted list + `bisect_left` (lower_bound) / `bisect.insort`. O(n) insert, fast up to ~1e5.
-- Only need min/max with deletions → `heapq` + lazy deletion.
+- Only need min/max with deletions → `heapq` + lazy deletion: push `(value, index)`, never erase; when reading the top, pop it while it's dead (e.g. index outside the window). Each element popped at most once → O(N log N). This replaces the C++ multiset in sliding-window max/min.
+- PyPy is a faster interpreter with the same standard library: no `sortedcontainers` there either.
 - `bisect_right(a, x)` = `upper_bound`: first index with `a[i] > x`, or `len(a)` (= `end()`). `bisect_left` = `lower_bound` (first `>= x`).
 - Replacing `a[bisect_right(a, x)]` with `x` keeps `a` sorted. That's a multiset replacement with no shifting (Towers, LIS).
 - A heap is **not** sorted: only `pq[0]` (the min) is meaningful. Sets can't be indexed at all.

@@ -43,6 +43,7 @@ Syntax notes: [CHEATSHEET.md](CHEATSHEET.md)
 | 4 | Buy Maximum Objects II | [buy_maximum_objects_ii.py](04-prefix-sums-binary-search/buy_maximum_objects_ii.py) | Sort + prefix sums + `bisect_right` |
 | 4 | Good Numbers | [good_numbers.py](04-prefix-sums-binary-search/good_numbers.py) | Difference array + two prefix sums, fast I/O |
 | 5 | Valid Parentheses (min additions) | [valid_parentheses_min_add.py](05-stacks-queues/valid_parentheses_min_add.py) | Stack of unmatched `(`, count unmatched `)` |
+| 5 | Maximum in Window | [maximum_in_window.py](05-stacks-queues/maximum_in_window.py) | Max-heap + lazy deletion as a multiset |
 
 ## Language decisions
 
