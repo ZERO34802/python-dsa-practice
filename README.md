@@ -13,7 +13,7 @@ Syntax notes: [CHEATSHEET.md](CHEATSHEET.md)
 | 2 | Arrays and hashing | |
 | 3 | Two pointers and sliding window | |
 | 4 | Prefix sums and binary search (incl. on the answer) | In progress |
-| 5 | Stacks and queues (monotonic stack/queue) | |
+| 5 | Stacks and queues (monotonic stack/queue) | In progress |
 | 6 | Linked lists | |
 | 7 | Recursion and backtracking | |
 | 8 | Trees | |
@@ -42,6 +42,7 @@ Syntax notes: [CHEATSHEET.md](CHEATSHEET.md)
 | 4 | LR Sum Query | [lr_sum_query.py](04-prefix-sums-binary-search/lr_sum_query.py) | Prefix sums mod M, fast input |
 | 4 | Buy Maximum Objects II | [buy_maximum_objects_ii.py](04-prefix-sums-binary-search/buy_maximum_objects_ii.py) | Sort + prefix sums + `bisect_right` |
 | 4 | Good Numbers | [good_numbers.py](04-prefix-sums-binary-search/good_numbers.py) | Difference array + two prefix sums, fast I/O |
+| 5 | Valid Parentheses (min additions) | [valid_parentheses_min_add.py](05-stacks-queues/valid_parentheses_min_add.py) | Stack of unmatched `(`, count unmatched `)` |
 
 ## Language decisions
 
