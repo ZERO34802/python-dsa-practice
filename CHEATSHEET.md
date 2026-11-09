@@ -48,6 +48,20 @@ print("\n".join(map(str, out))) # print once, after the loop
 - Declare per-test-case containers **inside** the test loop.
 - `return` only works inside a `def`. Top-level code uses `print`.
 
+## 2D arrays
+
+| C++ | Python |
+|---|---|
+| `vector<vector<int>> g(n, vector<int>(m, 0))` | `g = [[0] * m for _ in range(n)]` |
+| `g[i][j]` | `g[i][j]` |
+| rows / cols | `len(g)` / `len(g[0])` |
+| read n rows | `g = [list(map(int, input().split())) for _ in range(n)]` |
+
+- **Never** `[[0] * m] * n`: `[0] * m` runs once, and `* n` copies the *pointer* to that one row n times, so editing one row edits "all" of them.
+- Lists hold **references** (pointers). `a = b` gives two names for one list; it doesn't copy.
+- `x[i] = v` repoints slot i (ints are immutable, so `[0] * m` is safe). The bug only appears when slots share a **mutable** object (a list) and you edit *inside* it.
+- `[0]` on its own **creates** a list; `row[0]` **indexes** into one.
+
 ## Stack / queue
 
 | C++ | Python |
