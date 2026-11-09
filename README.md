@@ -41,6 +41,7 @@ Syntax notes: [CHEATSHEET.md](CHEATSHEET.md)
 | 1 | Towers (AZ101) | [towers.py](01-python-stl/towers.py) | Sorted list + `bisect_right`, replace in place |
 | 4 | LR Sum Query | [lr_sum_query.py](04-prefix-sums-binary-search/lr_sum_query.py) | Prefix sums mod M, fast input |
 | 4 | Buy Maximum Objects II | [buy_maximum_objects_ii.py](04-prefix-sums-binary-search/buy_maximum_objects_ii.py) | Sort + prefix sums + `bisect_right` |
+| 4 | Count the Pairs | [count_the_pairs.py](04-prefix-sums-binary-search/count_the_pairs.py) | Sort + `bisect_right` as a count, exclude self |
 | 4 | Good Numbers | [good_numbers.py](04-prefix-sums-binary-search/good_numbers.py) | Difference array + two prefix sums, fast I/O |
 | 5 | Valid Parentheses (min additions) | [valid_parentheses_min_add.py](05-stacks-queues/valid_parentheses_min_add.py) | Stack of unmatched `(`, count unmatched `)` |
 | 5 | Maximum in Window | [maximum_in_window.py](05-stacks-queues/maximum_in_window.py) | Max-heap + lazy deletion as a multiset |
