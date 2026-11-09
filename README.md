@@ -40,6 +40,7 @@ Syntax notes: [CHEATSHEET.md](CHEATSHEET.md)
 | 1 | Multiset (AZ101) | [multiset.py](01-python-stl/multiset.py) | Count map as multiset, sort at print |
 | 1 | Towers (AZ101) | [towers.py](01-python-stl/towers.py) | Sorted list + `bisect_right`, replace in place |
 | 4 | LR Sum Query | [lr_sum_query.py](04-prefix-sums-binary-search/lr_sum_query.py) | Prefix sums mod M, fast input |
+| 4 | Buy Maximum Objects II | [buy_maximum_objects_ii.py](04-prefix-sums-binary-search/buy_maximum_objects_ii.py) | Sort + prefix sums + `bisect_right` |
 | 4 | Good Numbers | [good_numbers.py](04-prefix-sums-binary-search/good_numbers.py) | Difference array + two prefix sums, fast I/O |
 
 ## Language decisions
