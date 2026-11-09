@@ -15,6 +15,23 @@ Built from mistakes I actually made. Newest additions at the bottom of each sect
 | print a sequence space-separated | `print(*p)` |
 
 - `input()` reads a **whole line**. `split()` gives **strings**, so convert with `int()`.
+- `map(f, lst)` applies `f` to every element (like `std::transform`). It's lazy: wrap it in `list()` to store the results.
+
+### Fast I/O (use when input/output is ~1e5+ lines)
+
+```python
+import sys
+input = sys.stdin.readline      # rebinds the name; no parentheses
+out = []
+...
+out.append(ans)                 # collect inside the loop
+print("\n".join(map(str, out))) # print once, after the loop
+```
+
+- Built-in `input()` flushes output before every read (`cin.tie` behaviour) and is built for interactive use. `readline` just reads from a buffer: it's `sync_with_stdio(0)` + `cin.tie(0)`.
+- `print` writes to a buffer. A flush sends it out. A million small flushes is the slow part.
+- `readline` keeps the `\n`: harmless with `.split()`, but use `.strip()` when reading a whole line as a string.
+- `join` needs strings: `map(str, out)` converts each element first. The separator goes before `.join`.
 - `print` has named arguments: `end` (default `"\n"`) and `sep` (default `" "`).
 
 ## Control flow
@@ -25,7 +42,7 @@ Built from mistakes I actually made. Newest additions at the bottom of each sect
 | `x++` / `mp[s]++` | `x += 1` / `mp[s] += 1` (no `++` either) |
 | `for (int x : arr)` | `for x in arr:` |
 | `else if` | `elif` |
-| `c ? a : b` | `a if c else b` |
+| `c ? a : b` | `a if c else b` (no `? :`; `int(cond)` gives 1/0) |
 | `{ }` | indentation; check which loop a line belongs to |
 
 - Declare per-test-case containers **inside** the test loop.
@@ -111,3 +128,5 @@ Built from mistakes I actually made. Newest additions at the bottom of each sect
 
 - Python is ~10-100x slower per operation in your own loops. Built-ins (`sort`, `sum`, `Counter`, `max`) run in C.
 - About 1e8 simple operations: C++ is fine, Python risks TLE.
+- `%` with a positive mod is never negative in Python: `(a - b) % M` is safe (no `+ M` needed like C++).
+- Out-of-range index raises `IndexError` (C++ silently writes past the array). Size difference arrays `MAX + 2`.

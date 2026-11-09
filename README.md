@@ -12,7 +12,7 @@ Syntax notes: [CHEATSHEET.md](CHEATSHEET.md)
 | 1 | Python's "STL" (list, tuple, str, dict, defaultdict, Counter, set, deque, heapq, bisect, itertools, math) | Done |
 | 2 | Arrays and hashing | |
 | 3 | Two pointers and sliding window | |
-| 4 | Prefix sums and binary search (incl. on the answer) | |
+| 4 | Prefix sums and binary search (incl. on the answer) | In progress |
 | 5 | Stacks and queues (monotonic stack/queue) | |
 | 6 | Linked lists | |
 | 7 | Recursion and backtracking | |
@@ -39,6 +39,7 @@ Syntax notes: [CHEATSHEET.md](CHEATSHEET.md)
 | 1 | Students and Grades | [students_and_grades.py](01-python-stl/students_and_grades.py) | Hash set; check then add each arrival |
 | 1 | Multiset (AZ101) | [multiset.py](01-python-stl/multiset.py) | Count map as multiset, sort at print |
 | 1 | Towers (AZ101) | [towers.py](01-python-stl/towers.py) | Sorted list + `bisect_right`, replace in place |
+| 4 | Good Numbers | [good_numbers.py](04-prefix-sums-binary-search/good_numbers.py) | Difference array + two prefix sums, fast I/O |
 
 ## Language decisions
 
